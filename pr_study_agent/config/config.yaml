@@ -1,0 +1,25 @@
+# PR Study Agent Configuration
+llm:
+  provider: "local"
+  base_url: "http://116.198.70.68:8081"
+  model: "inner-deepseek_v4"
+  api_key: "inner-deepseek_v4-b61a32946a8b8ccb6e541708c9420137"
+  temperature: 0.1
+  max_tokens: 8192
+  timeout: 300
+
+study:
+  dataset_path: "../../SWE/swe_data/swe-bench_train.jsonl"
+  skills_path: "data/skills"
+  patch_pool_path: "data/skills/patch_pool"
+  log_path: "data/study_logs"
+  match_threshold: 0.3
+  similarity_threshold: 0.8
+  taxonomy_path: "config/taxonomy.json"
+  
+  budget:
+    skill_max_entries: 8
+    domain_max_entries: 10
+    scenario_max_per_domain: 15
+    sample_ratio: 0.3
+    merge_batch_size: 5

@@ -1,0 +1,122 @@
+{
+  "domain": {
+    "description": "问题类型 — 按结构性根因分类的 bug 类别，非语言/框架",
+    "tags": [
+      "data-modification",
+      "state-synchronization",
+      "resource-lifecycle",
+      "boundary-handling",
+      "control-flow",
+      "concurrency",
+      "type-coercion",
+      "api-contract",
+      "error-propagation",
+      "configuration",
+      "general",
+      "incomplete-abstraction"
+    ]
+  },
+  "problem_pattern": {
+    "description": "逻辑模式/根因 — 决策指引，描述问题的本质逻辑",
+    "tags": [
+      "capability-mismatch",
+      "state-desynchronization",
+      "partial-propagation",
+      "environment-dependent-logic",
+      "implicit-assumption-violation",
+      "symmetry-breaking",
+      "boundary-condition-neglect",
+      "type-coercion-loss",
+      "ordering-dependency",
+      "default-value-substitution",
+      "incomplete-abstraction",
+      "leaky-abstraction",
+      "contract-violation",
+      "invariant-erosion",
+      "complexity-escalation-blindness"
+    ]
+  },
+  "_candidate_pool": [
+    {
+      "tag": "monitoring-integrations",
+      "dimension": "domain",
+      "count": 1,
+      "skill_ids": [
+        "4ccc9fbf"
+      ],
+      "added_at": "2026-04-11T20:59:26.339731"
+    },
+    {
+      "tag": "database-monitoring",
+      "dimension": "domain",
+      "count": 1,
+      "skill_ids": [
+        "4ace1539"
+      ],
+      "added_at": "2026-04-11T21:07:15.282643"
+    },
+    {
+      "tag": "gpu-distributed-computing",
+      "dimension": "domain",
+      "count": 1,
+      "skill_ids": [
+        "60becf4e"
+      ],
+      "added_at": "2026-04-12T11:27:18.098402"
+    },
+    {
+      "tag": "privilege-escalation",
+      "dimension": "domain",
+      "count": 1,
+      "skill_ids": [
+        "DataDog__integrations-core-619"
+      ],
+      "added_at": "2026-05-07T15:40:13.243840"
+    },
+    {
+      "tag": "outcome-dimension-neglect",
+      "dimension": "problem_pattern",
+      "count": 1,
+      "skill_ids": [
+        "DataDog__integrations-core-727"
+      ],
+      "added_at": "2026-05-07T15:41:18.218500"
+    },
+    {
+      "tag": "severity-misclassification",
+      "dimension": "problem_pattern",
+      "count": 1,
+      "skill_ids": [
+        "DataDog__integrations-core-10414"
+      ],
+      "added_at": "2026-05-15T10:03:40.794012"
+    },
+    {
+      "tag": "partial-propagation",
+      "dimension": "domain",
+      "count": 1,
+      "skill_ids": [
+        "DataDog__integrations-core-11210"
+      ],
+      "added_at": "2026-05-15T10:04:51.200616"
+    },
+    {
+      "tag": "template-identity-residue",
+      "dimension": "problem_pattern",
+      "count": 1,
+      "skill_ids": [
+        "DataDog__integrations-core-1369"
+      ],
+      "added_at": "2026-05-15T10:08:41.239542"
+    },
+    {
+      "tag": "environment-dependent-logic",
+      "dimension": "domain",
+      "count": 1,
+      "skill_ids": [
+        "DataDog__integrations-core-1633"
+      ],
+      "added_at": "2026-05-15T14:58:38.968168"
+    }
+  ]
+}

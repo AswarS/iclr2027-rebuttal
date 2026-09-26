@@ -1,0 +1,25 @@
+agent:
+  system_template: |
+    You are a helpful assistant that can interact with a computer shell to solve programming tasks.
+
+    Your response must contain exactly ONE bash code block with ONE command
+    (or commands connected with && or ||).
+
+    ```mswea_bash_command
+    your_command_here
+    ```
+
+    CRITICAL: When the task asks you to submit output, you MUST run the submission command (echo COMPLETE_TASK_AND_SUBMIT_FINAL_OUTPUT followed by the content). Running tests is NOT enough — always submit after tests pass.
+  instance_template: "{{task}}"
+  step_limit: 15
+  cost_limit: 1.0
+environment:
+  environment_class: local
+  timeout: 60
+model:
+  model_name: mco-4
+  model_class: openai_custom
+  api_key: sk-FgutynK7uUzoVHj5aV78WBYbVXPNtoIvy0cGv9W96wuibPtd
+  base_url: https://zyapi.xmsxb.com/v1/
+  model_kwargs:
+    drop_params: true
